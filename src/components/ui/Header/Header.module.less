@@ -8,12 +8,14 @@ src: url('/src/assets/fonts/Anton-Regular.ttf');
 @import '/src/less/base/_settings.less';
 
 .header {
+  display: flex;
+  margin-inline-start: 20px;
+  // justify-content: space-between;
   font-family: 'Anton';
-  font-size: 2rem;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
   
   &Text {
-    font-size: 2rem;
-    font-family: 'Anton';
     color: @primary;
   }
 }
