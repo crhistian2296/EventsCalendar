@@ -1,7 +1,7 @@
 // Fuente para el titulo
 @font-face {
-font-family: 'Anton';
-src: url('/src/assets/fonts/Anton-Regular.ttf');
+  font-family: 'Anton';
+  src: url('/src/assets/fonts/Anton-Regular.ttf');
 }
 
 // Variables
@@ -9,13 +9,47 @@ src: url('/src/assets/fonts/Anton-Regular.ttf');
 
 .header {
   display: flex;
-  margin-inline-start: 20px;
-  // justify-content: space-between;
+  // margin-inline-start: 20px;
+  align-items: center;
+  justify-content: flex-start;
   font-family: 'Anton';
-  font-size: 1.4rem;
+  font-size: calc(0.9rem + 1vw);
   letter-spacing: 2px;
-  
+
   &Text {
     color: @primary;
+  }
+}
+
+.menuButton {
+  margin: 0px 35px 0px 50px;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.menuOptions {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 25px;
+}
+
+.swipeButton {
+  margin: 0px 5px;
+}
+
+.swipeContainer {
+  padding: 0px 25px;
+}
+
+.btn {
+  background-color: aliceblue;
+  border: 1px solid lightblue;
+  border-radius: 3px;
+  padding: 10px;
+  transition: background-color 200ms;
+
+  &:hover {
+    background-color: darken(aliceblue, 3);
+    cursor: pointer;
   }
 }
